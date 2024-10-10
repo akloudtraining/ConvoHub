@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Django stuff:
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Pyre type checker
+.pyre/
+
+# Flask and other secrets
+instance/
+config.py
+client_secrets.json
+credentials.json
+
+# Docker
+*.dockerignore
+Dockerfile
+docker-compose.yml
+
+# PyCharm
+*.iml
