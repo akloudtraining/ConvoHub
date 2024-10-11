@@ -10,11 +10,13 @@ def authorize_youtube_service():
     flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
         CLIENT_SECRETS_FILE, scopes=["https://www.googleapis.com/auth/youtube.force-ssl"]
     )
-    flow.redirect_uri = 'http://localhost:5000/authorize-youtube/callback'
+    flow.redirect_uri = 'http://localhost:5001/authorize-youtube/callback'
     authorization_url, state = flow.authorization_url(
         access_type='offline',
         include_granted_scopes='true'
     )
+    # Update the redirect_uri in authorization_url to reflect port 5001
+    authorization_url = authorization_url.replace('localhost:5000', 'localhost:5001')
     return jsonify({"authorization_url": authorization_url})
 
 def handle_youtube_comments(data):
