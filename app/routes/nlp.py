@@ -1,6 +1,6 @@
 # File: app/routes/nlp.py
 # Description: NLP response generation route
-from flask import Blueprint, request, jsonify
+from flask import Blueprint, request
 from app.services.nlp_service import generate_nlp_response
 
 nlp_bp = Blueprint('nlp_bp', __name__)

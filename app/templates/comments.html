@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Manage YouTube Comments</h1>
+    <div>
+        <h3>Fetch Comments</h3>
+        <input type="text" id="video-id" placeholder="Video ID">
+        <button id="fetch-comments-btn">Fetch Comments</button>
+        <div id="comments-container"></div>
+    </div>
+
+    <div>
+        <h3>Post Comment</h3>
+        <input type="text" id="post-video-id" placeholder="Video ID">
+        <textarea id="comment-text" placeholder="Your comment"></textarea>
+        <button id="post-comment-btn">Post Comment</button>
+    </div>
+
+    <div>
+        <h3>Reply to Comment</h3>
+        <input type="text" id="reply-comment-id" placeholder="Comment ID">
+        <textarea id="reply-text" placeholder="Your reply"></textarea>
+        <button id="reply-comment-btn">Reply to Comment</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

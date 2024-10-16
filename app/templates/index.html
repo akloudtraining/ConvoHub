@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvoHub - YouTube Comment Manager</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ConvoHub - YouTube Comment Manager</h1>
+
+        <!-- Fetch Comments Form -->
+        <div class="section">
+            <h3>Fetch YouTube Comments</h3>
+            <input type="text" id="video-id" placeholder="Enter Video ID">
+            <button id="fetch-comments-btn">Fetch Comments</button>
+            <div id="comments-container"></div>
+        </div>
+
+        <!-- Post Comment Form -->
+        <div class="section">
+            <h3>Post a Comment</h3>
+            <input type="text" id="post-video-id" placeholder="Enter Video ID">
+            <textarea id="comment-text" placeholder="Enter your comment"></textarea>
+            <button id="post-comment-btn">Post Comment</button>
+        </div>
+
+        <!-- Reply to Comment Form -->
+        <div class="section">
+            <h3>Reply to a Comment</h3>
+            <input type="text" id="reply-comment-id" placeholder="Enter Comment ID">
+            <textarea id="reply-text" placeholder="Enter your reply"></textarea>
+            <button id="reply-comment-btn">Reply</button>
+        </div>
+
+        <!-- Monitor Trends Section -->
+        <div class="section">
+            <h3>Monitor YouTube Trends</h3>
+            <button id="fetch-trends-btn">Fetch Latest Trends</button>
+            <div id="trends-container"></div>
+        </div>
+
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
